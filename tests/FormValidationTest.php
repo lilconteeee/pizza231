@@ -38,7 +38,8 @@ class FormValidationTest extends TestCase
 
     public function testRegistrationPasswordMismatch(): void
     {
-        $this->assertNotEquals('pass1234', 'pass5678');
+        // НАМЕРЕННО СЛОМАННЫЙ ТЕСТ ДЛЯ ПРОВЕРКИ CI
+        $this->assertEquals(1, 2);
     }
 
     // ========== 2. ОФОРМЛЕНИЕ ЗАКАЗА ==========
