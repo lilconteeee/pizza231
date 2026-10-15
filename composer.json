@@ -1,0 +1,28 @@
+{
+    "name": "blackvantuz/insurance",
+    "description": "Страховая компания gym low cortisol",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "phpmetrics/phpmetrics": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "Controllers/",
+            "Models\\": "Models/",
+            "Views\\": "Views/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --color=always"
+    }
+}
